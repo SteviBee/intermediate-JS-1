@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+    <script>
+        let var1 = document.getElementById("container")
+        let var2 = document.querySelector("#container")
+        let var3 = document.getElementsByClassName("second")
+        let var4 = document.getElementsByClassName("third")[1]
+        // console.log(var1, var2, var3, var4);
+
+        // var1.innerText ='Hello';
+        // let footer = document.querySelector(".footer");
+        // footer.classList.add("main");
+        // footer.classList.remove("main");
+
+        let newLi = document.createElement("li");
+        newLi.innerText ="four"
+
+        let liToUl  = document.querySelector("ul");        
+        liToUl.appendChild(newLi);
+
+        let liInOl = document.querySelectorAll("ol li");
+        console.log(liInOl);
+        for(let i = 0; i < liInOl.length; i++) {
+            console.log(liInOl[i]);
+            liInOl[i].style.backgroundColor = "green";            
+        }
+        let divFooter = document.querySelector(".footer");
+        divFooter.remove();
+
+        // var footer = document.querySelector(".footer");
+        // footer.remove();
+        
+
+    </script>
+</body>
+</html>

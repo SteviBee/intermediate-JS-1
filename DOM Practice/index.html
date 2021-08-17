@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- make sure for now that your script tag is in the head -->
+    <title>Document</title>
+</head>
+<body id= "container">
+    <div class="hello">
+        Hello World 
+    </div>
+    <div class="hello">
+        Hello Everyone!
+    </div>
+    <a href="#">This link goes nowhere!</a>
+    <button>Click me!</button>
+    <script>
+        // let firstDiv = document.getElementsByTagName("div")[0];
+
+        // firstDiv.innerHTML = "Just changed!";
+        // let secondDiv = document.getElementsByTagName("div")[1];
+
+        // secondDiv.innerText = "Just changed Again!";
+
+        // firstDiv.style.color = "red";
+        // firstDiv.style.backgroundColor = "teal";
+        // let body = document.getElementById("container");
+
+        // body.getAttribute("id"); // "container"
+        // body.setAttribute("id", "new_container");
+        // body.getAttribute("id"); // "new_container"
+
+        // let button = document.createElement("button");
+        // button.innerText = "I am a button created with JavaScript!";
+
+        // let container = document.getElementById("container");
+        // container.appendChild(button);
+
+        let linkToBeRemoved = document.querySelector("a");
+
+        let container = document.getElementById("container");
+        container.removeChild(linkToBeRemoved);
+
+    </script>
+</body>
+</html>
